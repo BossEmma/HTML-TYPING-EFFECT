@@ -1,5 +1,5 @@
-# HTML TYPE EFFECT
-  HTML TYPE EFFECT is a lightweight JavaScript library for creating a typing effect on web pages.
+# HTML-TYPING-EFFECT
+  HTML-TYPE-EFFECT is a lightweight JavaScript library for creating a typing effect on web pages.
   
 ## Demo:
   Coming soon...

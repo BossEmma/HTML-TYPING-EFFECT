@@ -1,11 +1,12 @@
-# HTML TYOE EFFECT
+# HTML TYPE EFFECT
   HTML TYPE EFFECT is a lightweight JavaScript library for creating a typing effect on web pages.
   
 ## Demo:
   Coming soon...
   
 ## How To Use It
-  1. Add script right before closing &lt;body&gt; tag:
+  Coming soon...
+<!--  1. Add script right before closing &lt;body&gt; tag:
    ```html
    <script src="https://cdn.jsdelivr.net/gh/BossEmma/Number-Animate/number_animate.js"></script>
    ```
@@ -35,4 +36,4 @@
   This defines the number at which the count increases by
 
   ### 4. number-animate-start= "*"
-  This defines the delay in milliseconds between each count
+  This defines the delay in milliseconds between each count-->

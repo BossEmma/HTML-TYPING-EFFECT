@@ -27,4 +27,4 @@
   This defines the text which the typing effect will be applied
 
   ### 2. typing-delay:
-  
+  This defines the delay time (milliseconds) between each character being typed

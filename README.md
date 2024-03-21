@@ -5,8 +5,7 @@
   Coming soon...
   
 ## How To Use It
-  Coming soon...
-<!--  1. Add script right before closing &lt;body&gt; tag:
+  1. Add script right before closing &lt;body&gt; tag:
    ```html
    <script src="https://cdn.jsdelivr.net/gh/BossEmma/Number-Animate/number_animate.js"></script>
    ```
@@ -26,14 +25,4 @@
    ```
 
 ## Predefined Options:
-  ### 1. number-animate-start= "*"
-  This defines the count starting point
-
-  ### 2. number-animate-end= "*"
-  This defines the count end point
-
-  ### 3. number-animate-increment= "*"
-  This defines the number at which the count increases by
-
-  ### 4. number-animate-start= "*"
-  This defines the delay in milliseconds between each count-->
+  ### 1. number-animate-start

@@ -7,22 +7,24 @@
 ## How To Use It
   1. Add script right before closing &lt;body&gt; tag:
    ```html
-   <script src="https://cdn.jsdelivr.net/gh/BossEmma/Number-Animate/number_animate.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/BossEmma/HTML-TYPING-EFFECT/typing-effect.js"></script>
    ```
   2. Set the object class name to "number-animate":
    ```html
-    <div class="number-animate"></div>
+    <h1 class="typing-effect"></h1>
    ```
 
   3. Adjust behaviour by using number-animate-*:
    ```html
-    <div class="number-animate">
-      number-animate-start= "0"
-      number-animate-end= "100"
-      number-animate-increment= "10"
-      number-animate-delay= "20"
-    </div>
+    <h1 class="typing-effect">
+      type-text= "Hello World!"
+      typing-delay= "100"
+    </h1>
    ```
 
 ## Predefined Options:
-  ### 1. number-animate-start
+  ### 1. type-text:
+  This defines the text which the typing effect will be applied
+
+  ### 2. typing-delay:
+  

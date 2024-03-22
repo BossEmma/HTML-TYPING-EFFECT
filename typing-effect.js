@@ -3,23 +3,26 @@ function startTypingAnimation() {
 
     for (let i = 0; i < elements.length; i++) {
         const element = elements[i];
-        const typingSpeed = +element.getAttribute('typing-speed');
-        let text = element.textContent.trim();
-        let currentText = '';
+        const delay = +element.getAttribute('typing-speed');
+        const originalText = element.getAttribute('type-text');
+        const StartText = element.getAttribute('start-text');
+        
+        let current = StartText;
         let index = 0;
-        let isInView = false;
         let animationId;
-
-        function type() {
-            if (index < text.length) {
-                currentText += text.charAt(index);
-                element.textContent = currentText;
-                index++;
-            } else {
+        let isInView = false;
+        
+        function typeText(){
+            if (current.length >= originalText.length){
                 clearInterval(animationId);
             }
+            else {
+                current += originalText.charAt(index);
+                element.textContent = current;
+                index++;
+            }
         }
-
+        
         function checkInView() {
             const rect = element.getBoundingClientRect();
             const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -31,25 +34,22 @@ function startTypingAnimation() {
                 rect.bottom <= windowHeight &&
                 rect.right <= windowWidth
             );
-
+            
             if (inView && !isInView) {
                 isInView = true;
-                index = 0;
-                currentText = '';
-                text = element.textContent.trim();
-                element.textContent = currentText;
-                animationId = setInterval(type, typingSpeed);
+                current = StartText;
+                element.textContent = current;
+                animationId = setInterval(typeText, delay);
                 element.style.opacity = 1;
             } else if (!inView && isInView) {
                 isInView = false;
                 clearInterval(animationId);
-                index = 0;
-                currentText = '';
-                element.textContent = currentText;
+                current = StartText;
+                element.textContent = current;
                 element.style.opacity = 0;
             }
         }
-
+        
         window.addEventListener('scroll', checkInView);
         window.addEventListener('resize', checkInView);
         checkInView(); // Check if already in view on page load
